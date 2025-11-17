@@ -14,10 +14,13 @@ public class RangeOfNumbers {
          System.out.print(end);
       }
       else if (start > end) {
-         for (int j = end; j < start; j++) {
+         for (int j = start; j > end; j--) {
             System.out.print(j+", ");
          }
-         System.out.print(start);   
+         System.out.print(end);   
       }
+      else {
+         System.out.println(start);
+     }
    }
 }
